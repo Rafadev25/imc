@@ -5,13 +5,36 @@
     <title>IMC Calc</title>
 </head>
 <body>
-    <form action="calcImc()">
+    <form onsubmit="return calcImc()">
         <div class="form-control">
-            <div class="input-group">
-                <label for="name">Nome: </label>
-                <input type="text" placeholder="Informe o seu nome" id="name" name="name">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <label for="name">Nome: </label>
+                    <input type="text" placeholder="Informe o seu nome" id="name" name="name">
+                </div>
+                <div class="col-md-6">
+                    <label for="name">Nascimento: </label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                
             </div>
-        </div>    
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <label for="weight">Peso: </label>
+                    <input type="text" placeholder="Informe o seu peso" id="weight" name="weight">
+                </div>
+                <div class="col-md-6">
+                    <label for="height">Altura: </label>
+                    <input type="text" placeholder="Informe a sua altura" id="height" name="height">
+                </div>
+            </div>
+            <div class="btn-control">
+                <button type="submit" class="btn btn-save">
+                    Calcular
+                </button>
+            </div>
+        </div>
     </form>
 </body>
+<script src="script.js"></script>
 </html>
