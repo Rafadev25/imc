@@ -1,0 +1,20 @@
+
+#form-imc {
+  position:relative;
+  left:37%;
+  top:29%;
+  width:320px;
+  height:270px;
+}
+
+#form-imc .form {
+  position:absolute;
+  display:block;
+}
+
+input {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 5px 0px 10px 0px;
+}
